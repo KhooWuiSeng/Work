@@ -18,6 +18,13 @@ for line in stripped_headers:
 
 print(split_headers[:2])
 
+split_entries=[]
+for header in split_headers:
+    for entry in header:
+        split_entries.append(entry.split('='))
+
+print(split_entries[:10])
+
 #print(type(headers))
 #print(headers)
 
